@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Milestone :5 Unique Path and Shareable Link </h1>
+    <form action="" id="resume">
+        <fieldset>
+            <legend>PERSONAL INFORMATION </legend>
+
+            <label for="resname">Resume link:</label>
+            <input type="text" id="username" name="username" placeholder="Entre your username" required /> </br>
+
+
+            <Label for="name">Name: </Label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <Label for="email">Email: </Label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <Label for="phone">Phone: </Label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone no" required><br>
+
+            <Label for="phone">Address:</Label>
+            <input type="tesxt" id="address" name="address" placeholder="Enter your Address" required><br>
+
+            <label for="profilepick">Profile Picture:</label>
+            <input type="file" id="profilepick" name="profilepick" accept="image/*" required>
+
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>EDUCATION</legend>
+            <Label for="education">Education:</Label>
+            <textarea name="education" id="education" rows="4" required placeholder="Enter your education"
+                required></textarea> <br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>EXPERIENCE</legend>
+            <Label for="experience">Experience:</Label>
+            <textarea name="experience" id="experience" rows="4" required placeholder="Enter your experience"
+                required></textarea> <br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>SKILLS</legend>
+            <Label for="skills">Skills:</Label>
+            <input type="text" id="Skills" rows="4" placeholder="Add a skill"><br>
+            <button id="addskillbtn">Add</button>
+            <button id="remskillbtn">Remove</button>
+            <div id="skills">
+                <ul id="skills-list"></ul>
+            </div>
+        </fieldset>
+
+        <button type="submit" id="createResumeBtn">Create Resume</button>
+
+        <div id="resumeOutput"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 20px;
+   padding: 0;
+background: linear-gradient(to right, #eacda3, #d3a261);
+
+}
+h1{
+ text-align: center;
+ color:rgb(27, 2, 2) ;
+}
+
+form{
+    max-width:600px ;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #d3a261;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.42);
+padding: 20px;
+}
+
+
+fieldset{
+    border: 2px solid rgb(32, 1, 1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+background-color: #be965e ; 
+
+}
+
+legend{
+    font-weight: bold;
+    text-align: left;
+    color: rgb(63, 3, 3);
+
+}
+label{
+    display: block;
+    font-weight: 150;
+    margin-top: 10px;
+}
+input,textarea{
+    padding:8px;
+    margin-top:4px ;
+    border: 1px solid rgb(36, 2, 2);
+    border-radius: 4px;
+width: calc(100% - 1px);
+box-sizing: border-box;
+
+}
+
+button{
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top:4px ;
+    border-radius:8px ;
+    background-color:#b67827;
+    color: #fff;
+border:2px solid #e9c28c;
+border-radius: 10px;
+cursor: pointer;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 200;
+}
+button:hover{
+background-color: #be965e;
+
+}
+:placeholder-shown{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100;
+}
+
+#resumeOutput{
+max-width: 600px;
+margin: auto;
+padding: 20px;
+border: 2px solid ;
+border-radius:8px ;
+background-color: #e9bd83;
+border: 2px solid rgb(36, 2, 2);
+background-color: #eacda3;
+box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.42);
+padding: 20px;
+text-align: center; /* Center text within the parent */
+
+
+}
+
+#resumeOutput h2{
+color: #b67827;
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px auto;
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+}
+
+#addskillbtn{
+    width: 100px; /* set the width to 50 pixels */
+  height: 40px;
+  border-radius: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 5px;
+  
+  
+}
+
+#remskillbtn{
+    width: 100px; /* set the width to 50 pixels */
+    height: 40px;
+    border-radius: 5px;
+    justify-content: center;
+    padding-bottom: 20px;
+    top:5px;
+    
+}
+
+#createResumeBtn{
+    margin-top: 15px;
+    height: 40px;
+    
+}
+
+#Print{
+    margin-top:15px;
+    height: 40px;
+}
+
+.profilepick{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(36, 2, 2);
+    /* box-shadow: 0 4px 8px 0 rgb(#be965e,#eacda3,#d6ab6f); */
+    box-shadow: 0 4px 8px  rgba(230, 182, 94, 0.795);
+    border-radius: 500%;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+.user-profile {
+    width: 300px; /* Example width for the parent */
+   /* Center text within the parent */
+  }
+  
+  .profilepick {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(36, 2, 2);
+    box-shadow: 0 4px 8px  rgba(230, 182, 94, 0.795);
+    border-radius: 500%;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    align-items: flex-start;
+    margin-left: 0px ;
+  }
