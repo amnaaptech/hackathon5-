@@ -83,27 +83,27 @@ resumeForm.addEventListener('submit', (event) => {
 
     // Create the resume output
     const resumeOutput = `
-    <h2>Resume</h2>
-    ${profilePickURL ? `<img src="${profilePickURL}" alt="Profile Pick" class="profilePick"  style="width: 180px;  height: 200px; border-radius: 500%;  box-shadow: 10px 13px 46px -1px rgba(0,0,0,0.37);   display: block;
-  margin: 0 auto;       object-fit: cover;  text-align: left; ">` : ''}
-    <p><strong>Name:</strong>
-    <span id="edit-name" class="editable">${name}</span>
+    <h2  style="text-align: left;" >Resume</h2>
+    ${profilePickURL ? `<img src="${profilePickURL}" alt="Profile Pick" class="profilePick"  style="width: 180px;  height: 200px; border-radius: 500%;  box-shadow: 10px 13px 46px -1px rgba(0,0,0,0.37); display: block;
+  margin-right:30px;  margin-buttom:10px; object-fit: cover;  text-align: left; ">` : ''}
+    <p style="text-align: left;"><strong>Name:</strong>
+    <span  style="text-align: left;"  id="edit-name" class="editable">${name}</span>
     </p>
-    <p><strong>Email:</strong>
-    <span id="edit-email" class="editable">${email}</span>
+    <p style="text-align: left;" ><strong>Email:</strong>
+    <span  style="text-align: left;" id="edit-email" class="editable">${email}</span>
     </p>
-    <p><strong>Phone Number:</strong>
-    <span id="edit-phone" class="editable">${phone}</span>
+    <p style="text-align: left;" ><strong>Phone Number:</strong>
+    <span style="text-align: left;" id="edit-phone" class="editable">${phone}</span>
     </p>
 
-    <h3>Education:</h3>
-    <p id="edit-education" class="editable">${education}</p>
+    <h3 style="text-align: left;" >Education:</h3>
+    <p style="text-align: left;"  id="edit-education" class="editable">${education}</p>
 
-    <h3>Experience</h3>
-    <p id="edit-experience" class="editable">${experience}</p>
+    <h3 style="text-align: left;" >Experience</h3>
+    <p style="text-align: left;" id="edit-experience" class="editable">${experience}</p>
 
-    <h3>Skills</h3>
-    <ul id="edit-skills" class="editable">
+    <h3 style="text-align: left;" >Skills</h3>
+    <ul  style="text-align: left;" id="edit-skills" class="editable">
       ${skills.map((skill) => `<li>${skill}</li>`).join('')}
     </ul>
 

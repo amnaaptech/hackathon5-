@@ -68,24 +68,7 @@ resumeForm.addEventListener('submit', function (event) {
             return;
         }
         // Create the resume output
-        var resumeOutput = "\n    <h2>Resume</h2>\n    ".concat(profilePickURL ? "<img src=\"".concat(profilePickURL, "\" alt=\"Profile Pick\" class=\"profilePick\"  style=\"width: 180px;  height: 200px; border-radius: 500%;  box-shadow: 10px 13px 46px -1px rgba(0,0,0,0.37);   display: block;\n  margin: 0 auto;       object-fit: cover;  text-align: left; \">") : '', "\n    <p><strong>Name:</strong>\n    <span id=\"edit-name\" class=\"editable\">").concat(name_1, "</span>\n    </p>\n    <p><strong>Email:</strong>\n    <span id=\"edit-email\" class=\"editable\">").concat(email, "</span>\n    </p>\n    <p><strong>Phone Number:</strong>\n    <span id=\"edit-phone\" class=\"editable\">").concat(phone, "</span>\n    </p>\n\n    <h3>Education:</h3>\n    <p id=\"edit-education\" class=\"editable\">").concat(education, "</p>\n\n    <h3>Experience</h3>\n    <p id=\"edit-experience\" class=\"editable\">").concat(experience, "</p>\n\n    <h3>Skills</h3>\n    <ul id=\"edit-skills\" class=\"editable\">\n      ").concat(skills.map(function (skill) { return "<li>".concat(skill, "</li>"); }).join(''), "\n    </ul>\n\n    \n  ");
-        ///mara code
-        // const downloadurl = document.createElement('a')
-        // downloadurl.href = 'data:text/html;charset=utf-8' + encodeURIComponent(resumeOutput)
-        // downloadurl.download = uniquePath;
-        // downloadurl.textContent = 'Download Your Reseume';
-        // const downloadurl = document.createElement('a')
-        // downloadurl.href = 'data:text/html;charset=utf-8' + encodeURIComponent(resumeOutput)
-        // downloadurl.download = uniquePath;
-        // downloadurl.textContent = 'Download Your Reseume';
-        // // Add this line to simulate a click on the download link
-        // downloadurl.click();
-        // const downloadurl = document.createElement('a');
-        // downloadurl.href = 'data:text/html;charset=utf-8' + encodeURIComponent(resumeOutput);
-        // downloadurl.download = uniquePath;
-        // downloadurl.textContent = 'Download Your Resume';
-        // document.body.appendChild(downloadurl); // Add this line
-        // downloadurl.click(); // Add this line to simulate a click event
+        var resumeOutput = "\n    <h2  style=\"text-align: left;\" >Resume</h2>\n    ".concat(profilePickURL ? "<img src=\"".concat(profilePickURL, "\" alt=\"Profile Pick\" class=\"profilePick\"  style=\"width: 180px;  height: 200px; border-radius: 500%;  box-shadow: 10px 13px 46px -1px rgba(0,0,0,0.37); display: block;\n  margin-right:30px;  margin-buttom:10px; object-fit: cover;  text-align: left; \">") : '', "\n    <p style=\"text-align: left;\"><strong>Name:</strong>\n    <span  style=\"text-align: left;\"  id=\"edit-name\" class=\"editable\">").concat(name_1, "</span>\n    </p>\n    <p style=\"text-align: left;\" ><strong>Email:</strong>\n    <span  style=\"text-align: left;\" id=\"edit-email\" class=\"editable\">").concat(email, "</span>\n    </p>\n    <p style=\"text-align: left;\" ><strong>Phone Number:</strong>\n    <span style=\"text-align: left;\" id=\"edit-phone\" class=\"editable\">").concat(phone, "</span>\n    </p>\n\n    <h3 style=\"text-align: left;\" >Education:</h3>\n    <p style=\"text-align: left;\"  id=\"edit-education\" class=\"editable\">").concat(education, "</p>\n\n    <h3 style=\"text-align: left;\" >Experience</h3>\n    <p style=\"text-align: left;\" id=\"edit-experience\" class=\"editable\">").concat(experience, "</p>\n\n    <h3 style=\"text-align: left;\" >Skills</h3>\n    <ul  style=\"text-align: left;\" id=\"edit-skills\" class=\"editable\">\n      ").concat(skills.map(function (skill) { return "<li>".concat(skill, "</li>"); }).join(''), "\n    </ul>\n\n    \n  ");
         // Create a blob from the resume output
         var blob = new Blob([resumeOutput], { type: 'text/html' });
         // Create a URL from the blob
